@@ -1,0 +1,15 @@
+/* Entry CSS for PostCSS + Tailwind build.
+   - Tailwind directives
+   - Import your small custom CSS (css/style.css) so it's included and can be processed
+   (e.g., autoprefixer & cssnano will run).
+*/
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import site-specific custom styles (keeps them processed together) */
+@import "../css/style.css";
+
+/* You can also add small overrides here if needed. */
