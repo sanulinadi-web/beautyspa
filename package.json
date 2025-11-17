@@ -1,0 +1,21 @@
+{
+  "name": "marketing-landing-tailwind-build",
+  "version": "1.0.0",
+  "description": "Marketing landing page with Tailwind built via PostCSS (production-ready with purged CSS).",
+  "scripts": {
+    "dev:css": "postcss src/input.css -o dist/styles.css --watch",
+    "build:css": "cross-env NODE_ENV=production postcss src/input.css -o dist/styles.css",
+    "build": "npm run build:css",
+    "start": "npm run dev:css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.5.1"
+  },
+  "author": "sanulinadi-web",
+  "license": "MIT"
+}
